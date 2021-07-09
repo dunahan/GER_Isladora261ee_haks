@@ -1,0 +1,18 @@
+#MAXMODEL ASCII
+# model: pmg0_legl232
+filedependancy pmh0_legl232 NULL.mlk
+newmodel pmg0_legl232
+setsupermodel pmg0_legl232 NULL
+classification Character
+setanimationscale 0
+
+#MAXGEOM ASCII
+beginmodelgeom pmg0_legl232
+node dummy pmg0_legl232
+  parent NULL
+endnode
+
+endmodelgeom pmg0_legl232
+
+donemodel pmg0_legl232
+

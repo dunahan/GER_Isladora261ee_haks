@@ -1,0 +1,16 @@
+[Version]
+Version = 1.00
+
+[Text]
+
+
+[URL]
+
+
+[Left]
+
+
+[Top]
+
+
+[Color]

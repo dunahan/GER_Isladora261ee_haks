@@ -1,0 +1,33 @@
+This simple file is meant to be kept as an empty hak on players' computers.
+
+For builders, it allows them to move server-side-only files into the hak to reduce the number of "resources" used by the module. There is a limit of about 16,000 "resources" (files) that can be contained in a module...but this limit can be bypassed by moving things that will not need to be edited into one or more haks.
+
+This particular empty hak can be used as such a repository. A builder would need to copy his or her desired files to this hak, then associate the hak with the module via the toolset (Edit > Module Properties > Custom Content). The builder's copy stays server-side (so the game can use the resources within it), while players stay able to log into the server because they have a hak with the correct name in their NWN/hak folder.
+
+Server-side only files that can be moved to cep2_custom.hak include:
+scripts (.nss, .ncs)
+blueprints (.uti, .utt, .utc, .utp, etc.)
+
+A quick way to move such files into the hak:
+1. Open your module in the toolset.
+2. Open your NWN/modules/temp0 folder. Everything in here is a "resource" included in the module you are editing.
+3. Find any scripts/blueprints you do not plan on modifying anytime soon. Copy them into an empty folder.
+4. Close the temp0 folder, then your module and the toolset.
+5. Open cep2_custom.hak with NWN/utils/nwhak.exe.
+6. Drag and drop your copied files into the hak. Save and close.
+7. Reopen your module in the toolset.
+8. Add cep2_custom to you module's custom content list (Edit > Module Properties > Custom Content).
+9. Save you module and close it (and the toolset for good measure).
+
+Hak-contained content overrides module-contained content, so from now on your module (in both the toolset and on a server) will use the scripts/blueprints in the hak file instead of those that were once part of the module. Any changes you make (to those hak-stored) resources will not be saved unless you once again copy the files from NWN/modules/temp0 and add them to the cep2_custom.hak file. This is why you'll only want to hak-store scripts and blueprints you won't be changing anytime soon...it's just a hassle to make any updates to said files.
+
+This type of resource storage is very useful for modules approaching the 16k resources limit with things like single-use scripts and blueprint-heavy crafting systems.
+
+Note: While storing resources in this way, it's important to note that this will not bypass the "other" 16k limit for modules...the 16k limit on item/creature/placeable blueprints in the DM Client's "Create" menu. That is a hard limit on the combined spawnable/createable resources from the module and any haks. Exceeding this second 16k limit won't crash the game, but can and will crash the DM Client (so players would be able to log into the game, but not DMs).
+
+Good luck, and happy building.
+
+-The Amethyst Dragon
+www.neverwinternights.info
+www.amethyst-dragon.com/nwn
+nwncep.wikia.com
